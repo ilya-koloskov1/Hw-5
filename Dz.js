@@ -10,33 +10,34 @@ function one (){
 return;
 }
 
-var max = getMaxValue(arr);
-function getMaxValue(arr){
+maxValue(arr);
+function maxValue(arr){
 	var max = arr[0];
 	for(var i = 0; i < arr.length; i++){
 		if(max < arr[i]) max = arr[i];
 	}
-	return max;
+	alert(" max "+max);
+	return;
 }
-alert(arr+" max "+max);
 
-var min = getMinValue(arr);
-function getMinValue(arr){
+
+
+minValue(arr);
+function minValue(arr){
 	var min = arr[0];
 	for(var i = 0; i > arr.length; i++){
 		if(min > arr[i]) min = arr[i];
 	}
-	return min;
+	alert(" min "+min);
+	return;
 }
-alert(arr+" min "+min);
 
-var sum = sum(arr);
-function sum (arr){
+sumValue(arr);
+function sumValue(arr){
 	var sum = 0;
-	for( i = 0; i < arr.length; i++){
-		sum = sum + parseInt(arr[i]);
-
+	for( var i = 0; i < arr.length; i++){
+		sum = sum + parseInt(arr[i]);	
 	}
-	alert(sum);
+	alert(' sum '+sum);
 	return;
 }
