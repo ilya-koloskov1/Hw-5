@@ -10,8 +10,8 @@ function one (){
 return;
 }
 
-maxValue(arr);
-function maxValue(arr){
+max(arr);
+function max(arr){
 	var max = arr[0];
 	for(var i = 0; i < arr.length; i++){
 		if(max < arr[i]) max = arr[i];
@@ -22,8 +22,8 @@ function maxValue(arr){
 
 
 
-minValue(arr);
-function minValue(arr){
+min(arr);
+function min(arr){
 	var min = arr[0];
 	for(var i = 0; i > arr.length; i++){
 		if(min > arr[i]) min = arr[i];
@@ -32,8 +32,8 @@ function minValue(arr){
 	return;
 }
 
-sumValue(arr);
-function sumValue(arr){
+sum(arr);
+function sum(arr){
 	var sum = 0;
 	for( var i = 0; i < arr.length; i++){
 		sum = sum + parseInt(arr[i]);	
